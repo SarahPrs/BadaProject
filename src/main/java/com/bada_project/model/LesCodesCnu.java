@@ -2,7 +2,7 @@ package com.bada_project.model;
 
 import java.util.Set;
 
-public class CodeCnu {
+public class LesCodesCnu {
 	
 	private Set<Cnu> un_cnu;
 
