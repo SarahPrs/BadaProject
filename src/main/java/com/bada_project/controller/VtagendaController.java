@@ -1,5 +1,7 @@
 package com.bada_project.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +21,8 @@ public class VtagendaController {
 	public ModelAndView showPageSauvegarde()
 	{
 		ModelAndView mv = new ModelAndView("vtagenda");
-		Vtagenda vtagenda = vtagendaRepository.findOne("58ddfe2adf1260f1138e1e99");
-		mv.addObject("vtagenda",vtagenda);
+		List<Vtagenda> vtagenda = vtagendaRepository.findAll();
+		mv.addObject("vtagenda",vtagenda.get(0));
 		return mv;
 		
 		
