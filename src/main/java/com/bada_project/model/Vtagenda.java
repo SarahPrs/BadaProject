@@ -10,7 +10,7 @@ public class Vtagenda {
 	private ObjectId id;
 	
 	@Field("DATA_VISUAL_TIMETABLING")
-	private DataVisualTimetabling DATA_VISUAL_TIMETABLING;
+	private DataVisualTimetabling DataVisualTimetabling;
 
 	public ObjectId getId() {
 		return id;
@@ -21,11 +21,11 @@ public class Vtagenda {
 	}
 
 	public DataVisualTimetabling getDATA_VISUAL_TIMETABLING() {
-		return DATA_VISUAL_TIMETABLING;
+		return DataVisualTimetabling;
 	}
 
 	public void setDATA_VISUAL_TIMETABLING(DataVisualTimetabling dATA_VISUAL_TIMETABLING) {
-		DATA_VISUAL_TIMETABLING = dATA_VISUAL_TIMETABLING;
+		DataVisualTimetabling = dATA_VISUAL_TIMETABLING;
 	}
 	
 	

@@ -14,6 +14,8 @@ public class DataVisualTimetabling {
 	public void setSauvegarde(Sauvegarde sauvegarde) {
 		this.sauvegarde = sauvegarde;
 	}
+
+	
 	
 	
 
