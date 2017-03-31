@@ -30,6 +30,4 @@ public class Sauvegarde {
 		this.utilisateur = utilisateur;
 	}
 	
-	
-
 }
