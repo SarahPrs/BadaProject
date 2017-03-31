@@ -1,23 +1,26 @@
 package com.bada_project.model;
 
-import java.util.Date;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 public class Sauvegarde {
 	
-	private Date date;
-	private Date version;
+	@Field("DATE")
+	private String date;
+	@Field("VERSION")
+	private String version;
+	@Field("UTILISATEUR")
 	private String utilisateur;
 	
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
-	public Date getVersion() {
+	public String getVersion() {
 		return version;
 	}
-	public void setVersion(Date version) {
+	public void setVersion(String version) {
 		this.version = version;
 	}
 	public String getUtilisateur() {
