@@ -6,7 +6,7 @@ public class LesMatieres {
 	
 	private Set<Matiere> une_matiere;
 
-	public Set<Matiere> getUn_grade() {
+	public Set<Matiere> getUne_Matiere() {
 		return une_matiere;
 	}
 
