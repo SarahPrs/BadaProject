@@ -24,8 +24,8 @@ public class Vtagenda {
 		return DataVisualTimetabling;
 	}
 
-	public void setDATA_VISUAL_TIMETABLING(DataVisualTimetabling dATA_VISUAL_TIMETABLING) {
-		DataVisualTimetabling = dATA_VISUAL_TIMETABLING;
+	public void setDATA_VISUAL_TIMETABLING(DataVisualTimetabling DATA_VISUAL_TIMETABLING) {
+		DataVisualTimetabling = DATA_VISUAL_TIMETABLING;
 	}
 	
 	

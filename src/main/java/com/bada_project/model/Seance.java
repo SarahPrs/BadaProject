@@ -1,20 +1,21 @@
 package com.bada_project.model;
 
-import java.util.Set;
-import java.util.Date;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 public class Seance {
 	
+	@Field("code")
 	private float code;
-	private float dateModification;
+	@Field("ENSEIGNEMENT")
 	private int enseignement;
+	@Field("DATE")
 	private String date;
+	@Field("HEURE")
 	private int heure;
+	@Field("DUREE")
 	private int duree;
+	@Field("CODE_PROPRIETAIRE")
 	private float codeProprietaire;
-	private Set<LesRessources> lesRessources;
-	
-	
 	
 	public Seance() {};
 	
@@ -23,12 +24,6 @@ public class Seance {
 	}
 	public void setCode(float code) {
 		this.code = code;
-	}
-	public float getDateModification() {
-		return dateModification;
-	}
-	public void setDateModification(float dateModification) {
-		this.dateModification = dateModification;
 	}
 	public int getEnseignement() {
 		return enseignement;
@@ -59,12 +54,6 @@ public class Seance {
 	}
 	public void setCodeProprietaire(float codeProprietaire) {
 		this.codeProprietaire = codeProprietaire;
-	}
-	public Set<LesRessources> getLesRessources() {
-		return lesRessources;
-	}
-	public void setLesRessources(Set<LesRessources> lesRessources) {
-		this.lesRessources = lesRessources;
 	}
 	
 }
