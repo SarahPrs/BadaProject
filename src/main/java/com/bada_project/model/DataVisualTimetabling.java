@@ -6,6 +6,9 @@ public class DataVisualTimetabling {
 	
 	@Field("SAUVEGARDE")
 	private Sauvegarde sauvegarde;
+	
+	@Field("LES_SEANCES")
+	private LesSeances lesSeances;
 
 	public Sauvegarde getSauvegarde() {
 		return sauvegarde;

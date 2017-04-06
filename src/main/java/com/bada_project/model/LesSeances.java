@@ -1,16 +1,19 @@
 package com.bada_project.model;
 
-import java.util.Set;
+import java.util.ArrayList;
+
+import org.springframework.data.mongodb.core.mapping.Field;
 
 public class LesSeances {
 	
-	private Set<Seance> LesSeances;
+	@Field("UNE_SEANCE")
+	private ArrayList<Seance> LesSeances;
 
-	public Set<Seance> getLesSeance() {
+	public ArrayList<Seance> getLesSeance() {
 		return LesSeances;
 	}
 
-	public void setUneSeances(Set<Seance> uneSeance) {
-		this.LesSeances = LesSeances;
+	public void setUneSeances(ArrayList<Seance> uneSeance) {
+		this.LesSeances = uneSeance;
 	}
 }
