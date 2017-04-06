@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8"/>
+<meta charset="UTF-8" />
 <title>Info de la sauvegarde</title>
+<link type="text/css" rel="stylesheet" th:href="@{/css/materialize.css}"
+	media="screen,projection" />
+
 </head>
 <body>
 
-	<p th:text="${sauvegarde.date}">Date</p>
-	<p th:text="${sauvegarde.version}">Version</p>
-	<p th:text="${sauvegarde.utilisateur}">Utilisateur</p>
+	<div class="container">
+	<h3 class="blue-text text-darken-2 center">Table - "Sauvegarde"</h3>
+	<table class="striped centered">
+		<thead>
+			<tr>
+				<th>DATE</th>
+				<th>VERSION</th>
+				<th>UTILISATEUR</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td th:text="${sauvegarde.date}"></td>
+				<td th:text="${sauvegarde.version}"></td>
+				<td th:text="${sauvegarde.utilisateur}"></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
 
 </body>
 </html>

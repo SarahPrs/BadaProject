@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-</head>
-
-<body>
-<<<<<<< HEAD
-    <header>
-    </header>
-    
-    <main>
-       <p th:text="${vtagenda.id}">Bonjour</p>
-       <p th:text="${vtagenda.DATA_VISUAL_TIMETABLING.sauvegarde.version}">Bonjour</p>
-       <p th:text="${vtagenda.DATA_VISUAL_TIMETABLING.sauvegarde.utilisateur}">Bonjour</p>
-    </main>
-    
-    <footer>
-    </footer>
-=======
-	<header></header>
-	<main>
-	<form th:action="@{/enseignement.html}" method="post">
-
-		<input type="date" name="date"/>
+	<body>
+		<header>
 		
-		<button type="submit">ENVOYER</button>
+    		<link type="text/css" rel="stylesheet" th:href="@{/css/materialize.css}" media="screen,projection" />
+		
+		</header>
+		
+		<main>
+		<div class="container">
+			<h3>VTAgenda</h3>
+			
+			<form th:action="@{/enseignement.html}" method="post">
+	
+			<input class="col s3" type="date" name="date"/>
+			
+			<button class="col s3" type="submit">ENVOYER</button>
+	
+			</form>
+		</div>
+		</main>
+		
+		<footer>
+		</footer>
 
-	</form>
-	</main>
-	<footer></footer>
->>>>>>> e80ec8f6ac2430c7ca434c00ad565b3f1baef9de
-</body>
-
+	</body>
 </html>
